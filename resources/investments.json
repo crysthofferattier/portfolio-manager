@@ -1,0 +1,178 @@
+[
+    {
+        "trade_date": "2023-05-18",
+        "symbol": "KNCR11",
+        "value": "95.12",
+        "quantity": "1.00",
+        "total": "95.12",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-05-18",
+        "symbol": "KNCR11",
+        "value": "95.12",
+        "quantity": "6.00",
+        "total": "570.72",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-05-18",
+        "symbol": "KNCR11",
+        "value": "95.12",
+        "quantity": "3.00",
+        "total": "285.36",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-05-19",
+        "symbol": "PETR4F",
+        "value": "26.12",
+        "quantity": "1.00",
+        "total": "26.12",
+        "type_id": "3"
+    },
+    {
+        "trade_date": "2023-05-22",
+        "symbol": "ITSA4F",
+        "value": "8.91",
+        "quantity": "1.00",
+        "total": "8.91",
+        "type_id": "3"
+    },
+    {
+        "trade_date": "2023-05-22",
+        "symbol": "ITSA4F",
+        "value": "8.91",
+        "quantity": "1.00",
+        "total": "8.91",
+        "type_id": "3"
+    },
+    {
+        "trade_date": "2023-05-23",
+        "symbol": "BBAS3F",
+        "value": "43.67",
+        "quantity": "3.00",
+        "total": "131.01",
+        "type_id": "3"
+    },
+    {
+        "trade_date": "2023-05-23",
+        "symbol": "CPTS11",
+        "value": "80.49",
+        "quantity": "3.00",
+        "total": "241.47",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-05-23",
+        "symbol": "ITSA4F",
+        "value": "8.91",
+        "quantity": "13.00",
+        "total": "115.83",
+        "type_id": "3"
+    },
+    {
+        "trade_date": "2023-05-24",
+        "symbol": "HGLG11",
+        "value": "159.1",
+        "quantity": "2.00",
+        "total": "318.2",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-05-24",
+        "symbol": "TAEE11F",
+        "value": "37.37",
+        "quantity": "4.00",
+        "total": "149.48",
+        "type_id": "3"
+    },
+    {
+        "trade_date": "2023-06-20",
+        "symbol": "BBAS3F",
+        "value": "50.11",
+        "quantity": "3.00",
+        "total": "150.33",
+        "type_id": "3"
+    },
+    {
+        "trade_date": "2023-06-20",
+        "symbol": "CPTS11",
+        "value": "82.66",
+        "quantity": "4.00",
+        "total": "330.64",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-06-20",
+        "symbol": "HGLG11",
+        "value": "166",
+        "quantity": "2.00",
+        "total": "332",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-06-20",
+        "symbol": "ITSA4F",
+        "value": "9.78",
+        "quantity": "15.00",
+        "total": "146.7",
+        "type_id": "3"
+    },
+    {
+        "trade_date": "2023-06-20",
+        "symbol": "ITSA4F",
+        "value": "9.78",
+        "quantity": "5.00",
+        "total": "48.9",
+        "type_id": "3"
+    },
+    {
+        "trade_date": "2023-06-20",
+        "symbol": "KNCR11",
+        "value": "96.58",
+        "quantity": "2.00",
+        "total": "193.16",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-06-20",
+        "symbol": "KNCR11",
+        "value": "96.58",
+        "quantity": "2.00",
+        "total": "193.16",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-06-20",
+        "symbol": "PETR4F",
+        "value": "30.69",
+        "quantity": "6.00",
+        "total": "184.14",
+        "type_id": "3"
+    },
+    {
+        "trade_date": "2023-06-20",
+        "symbol": "TAEE11F",
+        "value": "38.09",
+        "quantity": "5.00",
+        "total": "190.45",
+        "type_id": "3"
+    },
+    {
+        "trade_date": "2023-06-21",
+        "symbol": "BCFF11",
+        "value": "68.7",
+        "quantity": "3.00",
+        "total": "206.1",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-05-23",
+        "symbol": "SELIC 2029",
+        "value": "13118.64",
+        "quantity": "0.07",
+        "total": "918.3",
+        "type_id": "1"
+    }
+]

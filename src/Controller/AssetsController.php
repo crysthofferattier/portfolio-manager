@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use Cake\View\JsonView;
 /**
  * Assets Controller
  *
@@ -11,6 +12,15 @@ namespace App\Controller;
  */
 class AssetsController extends AppController
 {
+    public function initialize(): void
+    {
+        $this->loadComponent('DateFormat');
+    }
+
+    public function viewClasses(): array
+    {
+        return [JsonView::class];
+    }
     /**
      * Index method
      *

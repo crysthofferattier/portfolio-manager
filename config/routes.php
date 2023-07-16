@@ -91,7 +91,16 @@ return static function (RouteBuilder $routes) {
     $routes->scope('/api/v1/', function (RouteBuilder $routes) {
         $routes->setExtensions(['json']);
         $routes->resources('Assets', ['id' => '.*']);
-        $routes->resources('Dividends', ['id' => '.*']);
+        $routes->resources('Dividends', [
+            'id' => '.*',
+            'map' => [
+                'getTotalDividendsPerType' => [
+                    'action' => 'getTotalDividendsPerType',
+                    'method' => 'GET',
+                    'path' => '/get-total-dividends-per-type'
+                ]
+            ]
+        ]);
         $routes->resources('Transactions', [
             'id' => '.*',
             'map' => [

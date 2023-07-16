@@ -33,10 +33,8 @@ class DividendsController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Assets'],
-        ];
-        $dividends = $this->paginate($this->Dividends);
+        $dividends = $this->Dividends->find()
+            ->contain('Assets');
 
         $this->set(compact('dividends'));
     }
@@ -133,5 +131,27 @@ class DividendsController extends AppController
 
         $this->set('message', $message);
         $this->viewBuilder()->setOption('serialize', ['message']);
+    }
+
+    public function getTotalDividendsPerType()
+    {
+        $fiis = $this->Dividends->find()
+            ->contain('Assets')
+            ->where([
+                'Assets.type_id' => '2'
+            ]);
+
+        $stocks = $this->Dividends->find()
+            ->contain('Assets')
+            ->where([
+                'Assets.type_id' => '3'
+            ]);
+
+        $total = $this->Dividends->find()
+        ->sumOf('value');
+
+        
+
+        $this->set(compact('stocks', 'fiis', 'total'));
     }
 }

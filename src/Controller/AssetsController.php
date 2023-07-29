@@ -12,11 +12,6 @@ use Cake\View\JsonView;
  */
 class AssetsController extends AppController
 {
-    public function initialize(): void
-    {
-        $this->loadComponent('DateFormat');
-    }
-
     public function viewClasses(): array
     {
         return [JsonView::class];

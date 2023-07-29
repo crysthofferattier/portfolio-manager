@@ -18,7 +18,7 @@ class TransactionsController extends AppController
 {
     public function initialize(): void
     {
-        $this->loadComponent('DateFormat');
+        //$this->loadComponent('DateFormat');
     }
 
     public function viewClasses(): array

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Routes configuration.
  *
@@ -90,6 +91,16 @@ return static function (RouteBuilder $routes) {
      */
     $routes->scope('/api/v1/', function (RouteBuilder $routes) {
         $routes->setExtensions(['json']);
+        $routes->resources('Users', [
+            'id' => '.*',
+            'map' => [
+                'login' => [
+                    'action' => 'login',
+                    'method' => ['POST', 'PUT'],
+                    'path' => '/login'
+                ]
+            ]
+        ]);
         $routes->resources('Assets', ['id' => '.*']);
         $routes->resources('Dividends', [
             'id' => '.*',
@@ -127,5 +138,4 @@ return static function (RouteBuilder $routes) {
             ]
         ]);
     });
-
 };

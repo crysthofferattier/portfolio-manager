@@ -9,7 +9,7 @@ use Cake\ORM\Entity;
  * Transaction Entity
  *
  * @property int $id
- * @property string $symbol
+ * @property int $asset_id
  * @property string $quantity
  * @property string $value
  * @property string $total
@@ -17,7 +17,8 @@ use Cake\ORM\Entity;
  * @property int $type_id
  * @property \Cake\I18n\FrozenTime|null $created
  *
- * @property \App\Model\Entity\InvestmentsType $investments_type
+ * @property \App\Model\Entity\TransactionsType $transactions_type
+ * @property \App\Model\Entity\Asset $asset
  */
 class Transaction extends Entity
 {
@@ -38,6 +39,7 @@ class Transaction extends Entity
         'trade_date' => true,
         'type_id' => true,
         'created' => true,
-        'investments_type' => true,
+        'transactions_type' => true,
+        'asset' => true,
     ];
 }

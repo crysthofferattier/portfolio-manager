@@ -29,7 +29,10 @@ class TransactionsController extends AppController
     {
         $transactions = $this->Transactions->find('all')
             ->order(['trade_date' => 'DESC'])
-            ->contain('TransactionsType');
+            ->contain([
+                'TransactionsType',
+                'Assets'
+            ]);
 
         $this->set(compact('transactions'));
     }
@@ -44,7 +47,10 @@ class TransactionsController extends AppController
     public function view($id = null)
     {
         $transaction = $this->Transactions->get($id, [
-            'contain' => [],
+            'contain' => [
+                'TransactionsType',
+                'Assets'
+            ],
         ]);
 
         $transaction->trade_date = $this->DateFormat

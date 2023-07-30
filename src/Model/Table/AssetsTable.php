@@ -47,6 +47,12 @@ class AssetsTable extends Table
             'foreignKey' => 'type_id',
             'joinType' => 'INNER',
         ]);
+        $this->hasMany('Dividends', [
+            'foreignKey' => 'asset_id',
+        ]);
+        $this->hasMany('Transactions', [
+            'foreignKey' => 'asset_id',
+        ]);
     }
 
     /**

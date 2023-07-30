@@ -11,7 +11,8 @@ use Cake\Validation\Validator;
 /**
  * Transactions Model
  *
- * @property \App\Model\Table\InvestmentsTypeTable&\Cake\ORM\Association\BelongsTo $InvestmentsType
+ * @property \App\Model\Table\AssetsTable&\Cake\ORM\Association\BelongsTo $Assets
+ * @property \App\Model\Table\TransactionsTypeTable&\Cake\ORM\Association\BelongsTo $TransactionsType
  *
  * @method \App\Model\Entity\Transaction newEmptyEntity()
  * @method \App\Model\Entity\Transaction newEntity(array $data, array $options = [])
@@ -47,13 +48,12 @@ class TransactionsTable extends Table
 
         $this->addBehavior('Timestamp');
 
-        $this->belongsTo('TransactionsType', [
-            'foreignKey' => 'type_id',
-            'joinType' => 'INNER',
-        ]);
-
         $this->belongsTo('Assets', [
             'foreignKey' => 'asset_id',
+            'joinType' => 'INNER',
+        ]);
+        $this->belongsTo('TransactionsType', [
+            'foreignKey' => 'type_id',
             'joinType' => 'INNER',
         ]);
     }
@@ -67,8 +67,8 @@ class TransactionsTable extends Table
     public function validationDefault(Validator $validator): Validator
     {
         $validator
-        ->integer('asset_id')
-        ->notEmptyString('asset_id');
+            ->integer('asset_id')
+            ->notEmptyString('asset_id');
 
         $validator
             ->decimal('quantity')
@@ -106,8 +106,8 @@ class TransactionsTable extends Table
      */
     public function buildRules(RulesChecker $rules): RulesChecker
     {
-        $rules->add($rules->existsIn('type_id', 'TransactionsType'), ['errorField' => 'type_id']);
         $rules->add($rules->existsIn('asset_id', 'Assets'), ['errorField' => 'asset_id']);
+        $rules->add($rules->existsIn('type_id', 'TransactionsType'), ['errorField' => 'type_id']);
 
         return $rules;
     }

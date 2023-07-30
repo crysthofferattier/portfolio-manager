@@ -27,7 +27,7 @@ class TransactionsTypeFixture extends TestFixture
             [
                 'id' => 1,
                 'symbol' => 'Lorem ip',
-                'created' => '2023-07-10 22:14:32',
+                'created' => '2023-07-30 20:45:49',
             ],
         ];
         parent::init();

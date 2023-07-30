@@ -26,7 +26,7 @@ class Asset extends Entity
      * @var array<string, bool>
      */
     protected $_accessible = [
-        'asset_id' => true,
+        'symbol' => true,
         'type_id' => true,
         'transactions_type' => true,
     ];

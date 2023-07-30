@@ -21,7 +21,7 @@ class DividendsFixture extends TestFixture
             [
                 'id' => 1,
                 'asset_id' => 1,
-                'date' => '2023-07-15',
+                'date' => '2023-07-30',
                 'value' => 1.5,
             ],
         ];

@@ -20,13 +20,13 @@ class TransactionsFixture extends TestFixture
         $this->records = [
             [
                 'id' => 1,
-                'symbol' => 'Lorem ip',
+                'asset_id' => 1,
                 'quantity' => 1.5,
                 'value' => 1.5,
                 'total' => 1.5,
-                'trade_date' => '2023-07-10',
+                'trade_date' => '2023-07-30',
                 'type_id' => 1,
-                'created' => '2023-07-10 22:05:30',
+                'created' => '2023-07-30 20:45:49',
             ],
         ];
         parent::init();

@@ -52,6 +52,11 @@ class TransactionsTable extends Table
             'joinType' => 'INNER',
         ]);
 
+        $this->belongsTo('Assets', [
+            'foreignKey' => 'asset_id',
+            'joinType' => 'INNER',
+        ]);
+
         // $this->belongsTo('TransactionsType')
         // ->setForeignKey('type_id');
     }
@@ -64,11 +69,15 @@ class TransactionsTable extends Table
      */
     public function validationDefault(Validator $validator): Validator
     {
+        // $validator
+        //     ->scalar('symbol')
+        //     ->maxLength('symbol', 10)
+        //     ->requirePresence('symbol', 'create')
+        //     ->notEmptyString('symbol');
+
         $validator
-            ->scalar('symbol')
-            ->maxLength('symbol', 10)
-            ->requirePresence('symbol', 'create')
-            ->notEmptyString('symbol');
+        ->integer('asset_id')
+        ->notEmptyString('asset_id');
 
         $validator
             ->decimal('quantity')

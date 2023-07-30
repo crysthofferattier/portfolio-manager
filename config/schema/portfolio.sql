@@ -7,23 +7,11 @@ CREATE TABLE transactions_type (
 INSERT INTO transactions_type (id, symbol, created)
 VALUES (1, 'SELIC', NOW());
 INSERT INTO transactions_type (id, symbol, created)
-VALUES (2, 'FIIS', NOW());
+VALUES (2, 'FII', NOW());
 INSERT INTO transactions_type (id, symbol, created)
 VALUES (3, 'STOCKS', NOW());
 INSERT INTO transactions_type (id, symbol, created)
 VALUES (4, 'CRYPTO', NOW());
-
-CREATE TABLE transactions (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    symbol VARCHAR(10) NOT NULL,
-    quantity DECIMAL(10, 2) NOT NULL,
-    value DECIMAL(10, 2) NOT NULL,
-    total DECIMAL(10, 2) NOT NULL,
-    trade_date DATE NOT NULL,
-    type_id INT NOT NULL,
-    FOREIGN KEY (type_id) REFERENCES transactions_type(id),
-    created DATETIME
-) CHARSET = utf8mb4;
 
 CREATE TABLE assets (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -50,3 +38,16 @@ CREATE TABLE dividends (
     value DECIMAL(10, 2) NOT NULL,
     FOREIGN KEY (asset_id) REFERENCES assets(id)
 );
+
+CREATE TABLE transactions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    asset_id INT NOT NULL,
+    quantity DECIMAL(10, 2) NOT NULL,
+    value DECIMAL(10, 2) NOT NULL,
+    total DECIMAL(10, 2) NOT NULL,
+    trade_date DATE NOT NULL,
+    type_id INT NOT NULL,
+    FOREIGN KEY (type_id) REFERENCES transactions_type(id),
+    FOREIGN KEY (asset_id) REFERENCES assets(id),
+    created DATETIME
+) CHARSET = utf8mb4;

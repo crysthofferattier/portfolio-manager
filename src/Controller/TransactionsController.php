@@ -64,8 +64,8 @@ class TransactionsController extends AppController
         $this->request->allowMethod(['post', 'put']);
         $transaction = $this->Transactions->newEntity($this->request->getData());
 
-        $transaction->trade_date = $this->DateFormat
-            ->convertDate($this->request->getData('trade_date'));
+        // $transaction->trade_date = $this->DateFormat
+        //     ->convertDate($this->request->getData('trade_date'));
 
         if ($this->Transactions->save($transaction)) {
             $message = 'Saved';
@@ -74,9 +74,9 @@ class TransactionsController extends AppController
         }
         $this->set([
             'message' => $message,
-            'investment' => $transaction
+            'transaction' => $transaction
         ]);
-        $this->viewBuilder()->setOption('serialize', ['investment', 'message']);
+        $this->viewBuilder()->setOption('serialize', ['transaction', 'message']);
     }
 
     /**
@@ -179,5 +179,22 @@ class TransactionsController extends AppController
             ->order('FIELD(label,"January","February","March", "June", "July","August","September","October","November","December")');
 
         $this->set(compact('monthlyTransactions'));
+    }
+
+    public function totalPerAsset()
+    {
+        $query = $this->Transactions->find();
+        $result = $query->select([
+            'name' => 'symbol',
+            'y' => $query->func()->sum('total'),
+            'x' => $query->func()->sum('quantity'),
+            'type_id' => 'type_id',
+            'p' => 'concat(round(( sum(total)/5969.37 * 100 ),2),\'%\')'
+        ])->group([
+            'symbol',
+            'type_id'
+        ])->order(['type_id']);
+
+        $this->set(compact('result'));
     }
 }

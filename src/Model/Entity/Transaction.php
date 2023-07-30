@@ -31,7 +31,7 @@ class Transaction extends Entity
      * @var array<string, bool>
      */
     protected $_accessible = [
-        'symbol' => true,
+        'asset_id' => true,
         'quantity' => true,
         'value' => true,
         'total' => true,

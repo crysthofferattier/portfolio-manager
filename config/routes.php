@@ -134,6 +134,11 @@ return static function (RouteBuilder $routes) {
                     'action' => 'monthlyTransactionsPerType',
                     'method' => 'GET',
                     'path' => '/transactions-per-month-type'
+                ],
+                'totalPerAsset' => [
+                    'action' => 'totalPerAsset',
+                    'method' => 'GET',
+                    'path' => '/total-per-asset'
                 ]
             ]
         ]);

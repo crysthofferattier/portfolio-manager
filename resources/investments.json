@@ -1,178 +1,258 @@
 [
     {
         "trade_date": "2023-05-18",
-        "symbol": "KNCR11",
+        "asset_id": "1",
         "value": "95.12",
-        "quantity": "1.00",
-        "total": "95.12",
-        "type_id": "2"
-    },
-    {
-        "trade_date": "2023-05-18",
-        "symbol": "KNCR11",
-        "value": "95.12",
-        "quantity": "6.00",
+        "quantity": "6",
         "total": "570.72",
         "type_id": "2"
     },
     {
         "trade_date": "2023-05-18",
-        "symbol": "KNCR11",
+        "asset_id": "1",
         "value": "95.12",
-        "quantity": "3.00",
+        "quantity": "3",
         "total": "285.36",
         "type_id": "2"
     },
     {
+        "trade_date": "2023-05-18",
+        "asset_id": "1",
+        "value": "95.12",
+        "quantity": "1",
+        "total": "95.12",
+        "type_id": "2"
+    },
+    {
         "trade_date": "2023-05-19",
-        "symbol": "PETR4F",
+        "asset_id": "2",
         "value": "26.12",
-        "quantity": "1.00",
+        "quantity": "1",
         "total": "26.12",
         "type_id": "3"
     },
     {
         "trade_date": "2023-05-22",
-        "symbol": "ITSA4F",
+        "asset_id": "3",
         "value": "8.91",
-        "quantity": "1.00",
+        "quantity": "1",
         "total": "8.91",
         "type_id": "3"
     },
     {
         "trade_date": "2023-05-22",
-        "symbol": "ITSA4F",
+        "asset_id": "3",
         "value": "8.91",
-        "quantity": "1.00",
+        "quantity": "1",
         "total": "8.91",
         "type_id": "3"
     },
     {
         "trade_date": "2023-05-23",
-        "symbol": "BBAS3F",
-        "value": "43.67",
-        "quantity": "3.00",
-        "total": "131.01",
-        "type_id": "3"
-    },
-    {
-        "trade_date": "2023-05-23",
-        "symbol": "CPTS11",
+        "asset_id": "5",
         "value": "80.49",
-        "quantity": "3.00",
+        "quantity": "3",
         "total": "241.47",
         "type_id": "2"
     },
     {
         "trade_date": "2023-05-23",
-        "symbol": "ITSA4F",
+        "asset_id": "4",
+        "value": "43.67",
+        "quantity": "3",
+        "total": "131.01",
+        "type_id": "3"
+    },
+    {
+        "trade_date": "2023-05-23",
+        "asset_id": "3",
         "value": "8.91",
-        "quantity": "13.00",
+        "quantity": "13",
         "total": "115.83",
         "type_id": "3"
     },
     {
         "trade_date": "2023-05-24",
-        "symbol": "HGLG11",
+        "asset_id": "6",
         "value": "159.1",
-        "quantity": "2.00",
+        "quantity": "2",
         "total": "318.2",
         "type_id": "2"
     },
     {
         "trade_date": "2023-05-24",
-        "symbol": "TAEE11F",
+        "asset_id": "7",
         "value": "37.37",
-        "quantity": "4.00",
+        "quantity": "4",
         "total": "149.48",
         "type_id": "3"
     },
     {
         "trade_date": "2023-06-20",
-        "symbol": "BBAS3F",
-        "value": "50.11",
-        "quantity": "3.00",
-        "total": "150.33",
-        "type_id": "3"
-    },
-    {
-        "trade_date": "2023-06-20",
-        "symbol": "CPTS11",
+        "asset_id": "5",
         "value": "82.66",
-        "quantity": "4.00",
+        "quantity": "4",
         "total": "330.64",
         "type_id": "2"
     },
     {
         "trade_date": "2023-06-20",
-        "symbol": "HGLG11",
+        "asset_id": "6",
         "value": "166",
-        "quantity": "2.00",
+        "quantity": "2",
         "total": "332",
         "type_id": "2"
     },
     {
         "trade_date": "2023-06-20",
-        "symbol": "ITSA4F",
-        "value": "9.78",
-        "quantity": "15.00",
-        "total": "146.7",
+        "asset_id": "1",
+        "value": "96.58",
+        "quantity": "2",
+        "total": "193.16",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-06-20",
+        "asset_id": "1",
+        "value": "96.58",
+        "quantity": "2",
+        "total": "193.16",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-06-20",
+        "asset_id": "4",
+        "value": "50.11",
+        "quantity": "3",
+        "total": "150.33",
         "type_id": "3"
     },
     {
         "trade_date": "2023-06-20",
-        "symbol": "ITSA4F",
+        "asset_id": "3",
         "value": "9.78",
-        "quantity": "5.00",
+        "quantity": "5",
         "total": "48.9",
         "type_id": "3"
     },
     {
         "trade_date": "2023-06-20",
-        "symbol": "KNCR11",
-        "value": "96.58",
-        "quantity": "2.00",
-        "total": "193.16",
-        "type_id": "2"
+        "asset_id": "3",
+        "value": "9.78",
+        "quantity": "15",
+        "total": "146.7",
+        "type_id": "3"
     },
     {
         "trade_date": "2023-06-20",
-        "symbol": "KNCR11",
-        "value": "96.58",
-        "quantity": "2.00",
-        "total": "193.16",
-        "type_id": "2"
-    },
-    {
-        "trade_date": "2023-06-20",
-        "symbol": "PETR4F",
+        "asset_id": "2",
         "value": "30.69",
-        "quantity": "6.00",
+        "quantity": "6",
         "total": "184.14",
         "type_id": "3"
     },
     {
         "trade_date": "2023-06-20",
-        "symbol": "TAEE11F",
+        "asset_id": "7",
         "value": "38.09",
-        "quantity": "5.00",
+        "quantity": "5",
         "total": "190.45",
         "type_id": "3"
     },
     {
         "trade_date": "2023-06-21",
-        "symbol": "BCFF11",
+        "asset_id": "8",
         "value": "68.7",
-        "quantity": "3.00",
+        "quantity": "3",
         "total": "206.1",
         "type_id": "2"
     },
     {
-        "trade_date": "2023-05-23",
-        "symbol": "SELIC 2029",
-        "value": "13118.64",
-        "quantity": "0.07",
-        "total": "918.3",
-        "type_id": "1"
+        "trade_date": "2023-07-20",
+        "asset_id": "8",
+        "value": "72.95",
+        "quantity": "4",
+        "total": "291.8",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-07-20",
+        "asset_id": "8",
+        "value": "73.26",
+        "quantity": "1",
+        "total": "73.26",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-07-20",
+        "asset_id": "5",
+        "value": "87.13",
+        "quantity": "3",
+        "total": "261.39",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-07-20",
+        "asset_id": "6",
+        "value": "162.75",
+        "quantity": "1",
+        "total": "162.75",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-07-20",
+        "asset_id": "1",
+        "value": "96.6",
+        "quantity": "2",
+        "total": "193.2",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-07-20",
+        "asset_id": "1",
+        "value": "96.79",
+        "quantity": "3",
+        "total": "290.37",
+        "type_id": "2"
+    },
+    {
+        "trade_date": "2023-07-20",
+        "asset_id": "4",
+        "value": "47.81",
+        "quantity": "5",
+        "total": "239.05",
+        "type_id": "3"
+    },
+    {
+        "trade_date": "2023-07-20",
+        "asset_id": "3",
+        "value": "9.71",
+        "quantity": "15",
+        "total": "145.65",
+        "type_id": "3"
+    },
+    {
+        "trade_date": "2023-07-20",
+        "asset_id": "2",
+        "value": "29.22",
+        "quantity": "4",
+        "total": "116.88",
+        "type_id": "3"
+    },
+    {
+        "trade_date": "2023-07-20",
+        "asset_id": "2",
+        "value": "29.22",
+        "quantity": "3",
+        "total": "87.66",
+        "type_id": "3"
+    },
+    {
+        "trade_date": "2023-07-20",
+        "asset_id": "7",
+        "value": "36.13",
+        "quantity": "5",
+        "total": "180.65",
+        "type_id": "3"
     }
 ]

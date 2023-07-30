@@ -17,6 +17,5 @@ HEADERS = {
 
 for x in obj:
     r = requests.post('http://localhost:8765/api/v1/transactions/', headers=HEADERS, json=x)
-    # print(x)
+    print(x)
     print(r.status_code)
-    print(r.text)

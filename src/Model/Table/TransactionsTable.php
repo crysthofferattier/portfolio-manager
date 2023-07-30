@@ -56,9 +56,6 @@ class TransactionsTable extends Table
             'foreignKey' => 'asset_id',
             'joinType' => 'INNER',
         ]);
-
-        // $this->belongsTo('TransactionsType')
-        // ->setForeignKey('type_id');
     }
 
     /**
@@ -69,12 +66,6 @@ class TransactionsTable extends Table
      */
     public function validationDefault(Validator $validator): Validator
     {
-        // $validator
-        //     ->scalar('symbol')
-        //     ->maxLength('symbol', 10)
-        //     ->requirePresence('symbol', 'create')
-        //     ->notEmptyString('symbol');
-
         $validator
         ->integer('asset_id')
         ->notEmptyString('asset_id');
@@ -116,6 +107,7 @@ class TransactionsTable extends Table
     public function buildRules(RulesChecker $rules): RulesChecker
     {
         $rules->add($rules->existsIn('type_id', 'TransactionsType'), ['errorField' => 'type_id']);
+        $rules->add($rules->existsIn('asset_id', 'Assets'), ['errorField' => 'asset_id']);
 
         return $rules;
     }

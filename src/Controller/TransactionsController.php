@@ -16,11 +16,6 @@ use function PHPSTORM_META\type;
  */
 class TransactionsController extends AppController
 {
-    public function initialize(): void
-    {
-        //$this->loadComponent('DateFormat');
-    }
-
     public function viewClasses(): array
     {
         return [JsonView::class];

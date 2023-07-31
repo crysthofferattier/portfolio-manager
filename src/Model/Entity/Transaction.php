@@ -14,10 +14,8 @@ use Cake\ORM\Entity;
  * @property string $value
  * @property string $total
  * @property \Cake\I18n\FrozenDate $trade_date
- * @property int $type_id
  * @property \Cake\I18n\FrozenTime|null $created
  *
- * @property \App\Model\Entity\TransactionsType $transactions_type
  * @property \App\Model\Entity\Asset $asset
  */
 class Transaction extends Entity
@@ -37,9 +35,7 @@ class Transaction extends Entity
         'value' => true,
         'total' => true,
         'trade_date' => true,
-        'type_id' => true,
         'created' => true,
-        'transactions_type' => true,
         'asset' => true,
     ];
 }

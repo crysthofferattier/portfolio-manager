@@ -30,8 +30,9 @@ class TransactionsController extends AppController
         $transactions = $this->Transactions->find('all')
             ->order(['trade_date' => 'DESC'])
             ->contain([
-                'TransactionsType',
-                'Assets'
+                'Assets' => [
+                    'AssetsType'
+                ]
             ]);
 
         $this->set(compact('transactions'));
@@ -145,15 +146,18 @@ class TransactionsController extends AppController
     }
 
     /*
-    |  1 | SELIC  |
-    |  2 | FIIS   |
-    |  3 | STOCKS |
-    |  4 | CRYPTO |
+    |  1 | FIIS   |
+    |  2 | STOCKS |
     */
     public function totalPerType($type = null)
     {
         $total = $this->Transactions->find()
-            ->where(['type_id' => (int) $type])
+            ->contain([
+                'Assets' => [
+                    'AssetsType'
+                ]
+            ])
+            ->where(['AssetsType.id' => (int) $type])
             ->sumOf('total');
 
         $this->set(compact('total'));
@@ -177,12 +181,15 @@ class TransactionsController extends AppController
         $monthlyTransactions = $query->select([
             'label' => 'MONTHNAME(trade_date)',
             'y' => $query->func()->sum('total'),
-            'type_id' => 'type_id'
+            'type_id' => 'AssetsType.id'
+        ])->contain([
+            'Assets' => [
+                'AssetsType'
+            ]
         ])->group([
             'MONTHNAME(trade_date)',
-            'type_id'
-        ])
-            ->order('FIELD(label,"January","February","March", "June", "July","August","September","October","November","December")');
+            'AssetsType.id'
+        ])->order('FIELD(label,"January","February","March", "June", "July","August","September","October","November","December")');
 
         $this->set(compact('monthlyTransactions'));
     }
@@ -194,12 +201,16 @@ class TransactionsController extends AppController
             'name' => 'symbol',
             'y' => $query->func()->sum('total'),
             'x' => $query->func()->sum('quantity'),
-            'type_id' => 'type_id',
+            'type_id' => 'AssetsType.id',
             'p' => 'concat(round(( sum(total)/5969.37 * 100 ),2),\'%\')'
+        ])->contain([
+            'Assets' => [
+                'AssetsType'
+            ]
         ])->group([
             'symbol',
-            'type_id'
-        ])->order(['type_id']);
+            'AssetsType.id'
+        ])->order(['AssetsType.id']);
 
         $this->set(compact('result'));
     }

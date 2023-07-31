@@ -11,7 +11,8 @@ use Cake\Validation\Validator;
 /**
  * Assets Model
  *
- * @property \App\Model\Table\TransactionsTypeTable&\Cake\ORM\Association\BelongsTo $TransactionsType
+ * @property \App\Model\Table\DividendsTable&\Cake\ORM\Association\HasMany $Dividends
+ * @property \App\Model\Table\TransactionsTable&\Cake\ORM\Association\HasMany $Transactions
  *
  * @method \App\Model\Entity\Asset newEmptyEntity()
  * @method \App\Model\Entity\Asset newEntity(array $data, array $options = [])
@@ -26,6 +27,8 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\Asset[]|\Cake\Datasource\ResultSetInterface saveManyOrFail(iterable $entities, $options = [])
  * @method \App\Model\Entity\Asset[]|\Cake\Datasource\ResultSetInterface|false deleteMany(iterable $entities, $options = [])
  * @method \App\Model\Entity\Asset[]|\Cake\Datasource\ResultSetInterface deleteManyOrFail(iterable $entities, $options = [])
+ *
+ * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class AssetsTable extends Table
 {
@@ -43,8 +46,10 @@ class AssetsTable extends Table
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
 
-        $this->belongsTo('TransactionsType', [
-            'foreignKey' => 'type_id',
+        $this->addBehavior('Timestamp');
+
+        $this->belongsTo('AssetsType', [
+            'foreignKey' => 'asset_type_id',
             'joinType' => 'INNER',
         ]);
         $this->hasMany('Dividends', [
@@ -70,8 +75,14 @@ class AssetsTable extends Table
             ->notEmptyString('symbol');
 
         $validator
-            ->integer('type_id')
-            ->notEmptyString('type_id');
+            ->scalar('name')
+            ->maxLength('name', 75)
+            ->requirePresence('name', 'create')
+            ->notEmptyString('name');
+
+        $validator
+            ->integer('asset_type_id')
+            ->notEmptyString('asset_type_id');
 
         return $validator;
     }
@@ -85,7 +96,7 @@ class AssetsTable extends Table
      */
     public function buildRules(RulesChecker $rules): RulesChecker
     {
-        $rules->add($rules->existsIn('type_id', 'TransactionsType'), ['errorField' => 'type_id']);
+        $rules->add($rules->existsIn('asset_type_id', 'AssetsType'), ['errorField' => 'asset_type_id']);
 
         return $rules;
     }

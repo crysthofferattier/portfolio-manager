@@ -28,7 +28,11 @@ class DividendsController extends AppController
     public function index()
     {
         $dividends = $this->Dividends->find()
-            ->contain('Assets');
+            ->contain([
+                'Assets' => [
+                    'AssetsType'
+                ]
+            ]);
 
         $this->set(compact('dividends'));
     }
@@ -63,8 +67,8 @@ class DividendsController extends AppController
         $this->request->allowMethod(['post', 'put']);
         $dividend = $this->Dividends->newEntity($this->request->getData());
 
-        $dividend->date = $this->DateFormat
-            ->convertDate($this->request->getData('date'));
+        // $dividend->date = $this->DateFormat
+        //     ->convertDate($this->request->getData('date'));
 
         if ($this->Dividends->save($dividend)) {
             $message = 'Saved';
@@ -130,21 +134,29 @@ class DividendsController extends AppController
     public function getTotalDividendsPerType()
     {
         $fiis = $this->Dividends->find()
-            ->contain('Assets')
+            ->contain([
+                'Assets' => [
+                    'AssetsType'
+                ]
+            ])
             ->where([
-                'Assets.type_id' => '2'
+                'AssetsType.id' => '1'
             ]);
 
         $stocks = $this->Dividends->find()
-            ->contain('Assets')
+            ->contain([
+                'Assets' => [
+                    'AssetsType'
+                ]
+            ])
             ->where([
-                'Assets.type_id' => '3'
+                'AssetsType.id' => '2'
             ]);
 
         $total = $this->Dividends->find()
-        ->sumOf('value');
+            ->sumOf('value');
 
-        
+
 
         $this->set(compact('stocks', 'fiis', 'total'));
     }

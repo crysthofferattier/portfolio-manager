@@ -12,7 +12,6 @@ use Cake\Validation\Validator;
  * Transactions Model
  *
  * @property \App\Model\Table\AssetsTable&\Cake\ORM\Association\BelongsTo $Assets
- * @property \App\Model\Table\TransactionsTypeTable&\Cake\ORM\Association\BelongsTo $TransactionsType
  *
  * @method \App\Model\Entity\Transaction newEmptyEntity()
  * @method \App\Model\Entity\Transaction newEntity(array $data, array $options = [])
@@ -52,10 +51,6 @@ class TransactionsTable extends Table
             'foreignKey' => 'asset_id',
             'joinType' => 'INNER',
         ]);
-        $this->belongsTo('TransactionsType', [
-            'foreignKey' => 'type_id',
-            'joinType' => 'INNER',
-        ]);
     }
 
     /**
@@ -90,10 +85,6 @@ class TransactionsTable extends Table
             ->requirePresence('trade_date', 'create')
             ->notEmptyDate('trade_date');
 
-        $validator
-            ->integer('type_id')
-            ->notEmptyString('type_id');
-
         return $validator;
     }
 
@@ -107,7 +98,6 @@ class TransactionsTable extends Table
     public function buildRules(RulesChecker $rules): RulesChecker
     {
         $rules->add($rules->existsIn('asset_id', 'Assets'), ['errorField' => 'asset_id']);
-        $rules->add($rules->existsIn('type_id', 'TransactionsType'), ['errorField' => 'type_id']);
 
         return $rules;
     }

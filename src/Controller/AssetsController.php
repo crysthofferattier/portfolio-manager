@@ -1,9 +1,11 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Controller;
 
 use Cake\View\JsonView;
+
 /**
  * Assets Controller
  *
@@ -23,10 +25,8 @@ class AssetsController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['TransactionsType'],
-        ];
-        $assets = $this->paginate($this->Assets);
+        $assets = $this->Assets->find()
+            ->contain(['AssetsType']);
 
         $this->set(compact('assets'));
     }
@@ -41,7 +41,7 @@ class AssetsController extends AppController
     public function view($id = null)
     {
         $asset = $this->Assets->get($id, [
-            'contain' => ['TransactionsType'],
+            'contain' => ['AssetsType'],
         ]);
 
         $this->set(compact('asset'));
@@ -54,18 +54,18 @@ class AssetsController extends AppController
      */
     public function add()
     {
-        $asset = $this->Assets->newEmptyEntity();
-        if ($this->request->is('post')) {
-            $asset = $this->Assets->patchEntity($asset, $this->request->getData());
-            if ($this->Assets->save($asset)) {
-                $this->Flash->success(__('The asset has been saved.'));
+        $this->request->allowMethod(['post', 'put']);
+        $asset = $this->Assets->newEntity($this->request->getData());
 
-                return $this->redirect(['action' => 'index']);
-            }
-            $this->Flash->error(__('The asset could not be saved. Please, try again.'));
+        if ($this->Assets->save($asset)) {
+            $message = 'Asset saved!';
+        } else {
+            $message = $asset->getErrors();
         }
-        $transactionsType = $this->Assets->TransactionsType->find('list', ['limit' => 200])->all();
-        $this->set(compact('asset', 'transactionsType'));
+        $this->set([
+            'message' => $message
+        ]);
+        $this->viewBuilder()->setOption('serialize', ['message']);
     }
 
     /**

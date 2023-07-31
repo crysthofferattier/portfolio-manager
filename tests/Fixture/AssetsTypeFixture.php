@@ -6,10 +6,16 @@ namespace App\Test\Fixture;
 use Cake\TestSuite\Fixture\TestFixture;
 
 /**
- * AssetsFixture
+ * AssetsTypeFixture
  */
-class AssetsFixture extends TestFixture
+class AssetsTypeFixture extends TestFixture
 {
+    /**
+     * Table name
+     *
+     * @var string
+     */
+    public $table = 'assets_type';
     /**
      * Init method
      *
@@ -20,9 +26,7 @@ class AssetsFixture extends TestFixture
         $this->records = [
             [
                 'id' => 1,
-                'symbol' => 'Lorem ipsum dolor ',
-                'name' => 'Lorem ipsum dolor sit amet',
-                'asset_type_id' => 1,
+                'name' => 'Lorem ip',
                 'created' => '2023-07-31 21:29:17',
             ],
         ];

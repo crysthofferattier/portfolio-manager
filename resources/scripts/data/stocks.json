@@ -1,0 +1,2652 @@
+[
+  {
+    "symbol": "AALR3",
+    "name": "Alliança",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ABCB4",
+    "name": "Banco ABC Brasil",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ABEV3",
+    "name": "Ambev",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "AERI3",
+    "name": "Aeris Energy",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "AESB3",
+    "name": "AES Brasil",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "AFLT3",
+    "name": "Afluente T",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "AGRO3",
+    "name": "BrasilAgro",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "AGXY3",
+    "name": "AgroGalaxy",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "AHEB3",
+    "name": "São Paulo Turismo",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "AHEB5",
+    "name": "São Paulo Turismo",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "AHEB6",
+    "name": "São Paulo Turismo",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ALLD3",
+    "name": "Allied",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ALPA3",
+    "name": "Alpargatas",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ALPA4",
+    "name": "Alpargatas",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ALPK3",
+    "name": "Estapar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ALSO3",
+    "name": "Aliansce Sonae",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ALUP3",
+    "name": "Alupar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ALUP4",
+    "name": "Alupar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "AMAR3",
+    "name": "Lojas Marisa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "AMBP3",
+    "name": "Ambipar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "AMER3",
+    "name": "Americanas",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ANIM3",
+    "name": "Ânima Educação",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "APER3",
+    "name": "Alper",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "APTI4",
+    "name": "Aliperti",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ARML3",
+    "name": "Armac",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ARZZ3",
+    "name": "Arezzo",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ASAI3",
+    "name": "Assaí",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ATMP3",
+    "name": "Atma",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ATOM3",
+    "name": "ATOM",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "AURE3",
+    "name": "VTRM ENERGIA PARTICIPAÃiES S.A.",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "AVLL3",
+    "name": "Alphaville",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "AZEV3",
+    "name": "Azevedo & Travassos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "AZEV4",
+    "name": "Azevedo & Travassos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "AZUL4",
+    "name": "Azul",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "B3SA3",
+    "name": "B3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BAHI3",
+    "name": "Bahema",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BALM3",
+    "name": "Baumer",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BALM4",
+    "name": "Baumer",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BAUH4",
+    "name": "Excelsior",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BAZA3",
+    "name": "Banco da Amazônia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BBAS3",
+    "name": "Banco do Brasil",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BBDC3",
+    "name": "Banco Bradesco",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BBDC4",
+    "name": "Banco Bradesco",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BBRK3",
+    "name": "BBRK3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BBSE3",
+    "name": "BB Seguridade",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BDLL3",
+    "name": "Bardella",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BDLL4",
+    "name": "Bardella",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BEEF3",
+    "name": "Minerva",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BEES3",
+    "name": "Banestes",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BEES4",
+    "name": "Banestes",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BGIP3",
+    "name": "Banese",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BGIP4",
+    "name": "Banese",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BIDI3",
+    "name": "Banco Inter",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BIDI4",
+    "name": "Banco Inter",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BIOM3",
+    "name": "Biomm",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BKBR3",
+    "name": "BKBR3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BLAU3",
+    "name": "Blau Farmacêutica",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BLUT3",
+    "name": "Blue Tech Solutions",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BLUT4",
+    "name": "Blue Tech Solutions",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BMEB3",
+    "name": "Banco Mercantil do Brasil",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BMEB4",
+    "name": "Banco Mercantil do Brasil",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BMGB4",
+    "name": "Banco BMG",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BMIN3",
+    "name": "Banco Mercantil de Investimentos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BMIN4",
+    "name": "Banco Mercantil de Investimentos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BMKS3",
+    "name": "Monark",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BMOB3",
+    "name": "Bemobi",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BNBR3",
+    "name": "Banco do Nordeste",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BOAS3",
+    "name": "Boa Vista",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BOBR4",
+    "name": "Bombril",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BPAC3",
+    "name": "Banco BTG Pactual",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BPAC5",
+    "name": "Banco BTG Pactual",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BPAN4",
+    "name": "Banco Pan",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BPAR3",
+    "name": "Banpará",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRAP3",
+    "name": "Bradespar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRAP4",
+    "name": "Bradespar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRDT3",
+    "name": "BRDT3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRFS3",
+    "name": "BRF",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRGE11",
+    "name": "Consórcio Alfa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRGE12",
+    "name": "Consórcio Alfa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRGE3",
+    "name": "Consórcio Alfa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRGE5",
+    "name": "Consórcio Alfa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRGE6",
+    "name": "Consórcio Alfa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRGE7",
+    "name": "Consórcio Alfa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRGE8",
+    "name": "Consórcio Alfa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRIT3",
+    "name": "Brisanet",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRIV3",
+    "name": "Alfa Investimento",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRIV4",
+    "name": "Alfa Investimento",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRKM3",
+    "name": "Braskem",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRKM5",
+    "name": "Braskem",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRKM6",
+    "name": "Braskem",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRML3",
+    "name": "BRMalls",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRPR3",
+    "name": "BR Properties",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRSR3",
+    "name": "Banrisul",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRSR5",
+    "name": "Banrisul",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BRSR6",
+    "name": "Banrisul",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BSEV3",
+    "name": "Biosev",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BSLI3",
+    "name": "Banco de Brasília",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BSLI4",
+    "name": "Banco de Brasília",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BTOW3",
+    "name": "BTOW3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "BTTL3",
+    "name": "Embpar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CALI3",
+    "name": "Adolpho Lindenberg",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CALI4",
+    "name": "Adolpho Lindenberg",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CAMB3",
+    "name": "Cambuci",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CAML3",
+    "name": "Camil Alimentos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CARD3",
+    "name": "CARD3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CASH3",
+    "name": "Méliuz",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CASN3",
+    "name": "CASAN",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CASN4",
+    "name": "CASAN",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CBAV3",
+    "name": "CBA",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CBEE3",
+    "name": "Ampla Energia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CCPR3",
+    "name": "CCPR3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CCRO3",
+    "name": "Grupo CCR",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CEAB3",
+    "name": "C&A",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CEBR3",
+    "name": "CEB",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CEBR5",
+    "name": "CEB",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CEBR6",
+    "name": "CEB",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CEDO3",
+    "name": "Cedro Têxtil",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CEDO4",
+    "name": "Cedro Têxtil",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CEEB3",
+    "name": "COELBA",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CEEB5",
+    "name": "COELBA",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CEED3",
+    "name": "CEEE D",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CEED4",
+    "name": "CEEE D",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CEGR3",
+    "name": "Naturgy (CEG)",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CEPE3",
+    "name": "CELPE",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CEPE5",
+    "name": "CELPE",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CEPE6",
+    "name": "CELPE",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CESP3",
+    "name": "CESP",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CESP5",
+    "name": "CESP",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CESP6",
+    "name": "CESP",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CGAS3",
+    "name": "Comgás",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CGAS5",
+    "name": "Comgás",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CGRA3",
+    "name": "Grazziotin",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CGRA4",
+    "name": "Grazziotin",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CIEL3",
+    "name": "Cielo",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CLSA3",
+    "name": "ClearSale",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CLSC3",
+    "name": "Celesc",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CLSC4",
+    "name": "Celesc",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CMIG3",
+    "name": "CEMIG",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CMIG4",
+    "name": "CEMIG",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CMIN3",
+    "name": "CSN Mineração",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CNTO3",
+    "name": "CNTO3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "COCE3",
+    "name": "Coelce",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "COCE5",
+    "name": "Coelce",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "COCE6",
+    "name": "Coelce",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "COGN3",
+    "name": "Cogna",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CORR4",
+    "name": "Corrêa Ribeiro",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CPFE3",
+    "name": "CPFL Energia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CPLE3",
+    "name": "Copel",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CPLE5",
+    "name": "Copel",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CPLE6",
+    "name": "Copel",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CRDE3",
+    "name": "CR2",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CRFB3",
+    "name": "Carrefour Brasil",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CRIV3",
+    "name": "Alfa Financeira",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CRIV4",
+    "name": "Alfa Financeira",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CRPG3",
+    "name": "Tronox Pigmentos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CRPG5",
+    "name": "Tronox Pigmentos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CRPG6",
+    "name": "Tronox Pigmentos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CSAB3",
+    "name": "Cia. de Seg. Aliança da Bahia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CSAB4",
+    "name": "Cia. de Seg. Aliança da Bahia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CSAN3",
+    "name": "Cosan",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CSED3",
+    "name": "Cruzeiro do Sul Educacional",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CSMG3",
+    "name": "COPASA",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CSNA3",
+    "name": "Siderúrgica Nacional",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CSRN3",
+    "name": "COSERN",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CSRN5",
+    "name": "COSERN",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CSRN6",
+    "name": "COSERN",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CSUD3",
+    "name": "CSU Cardsystem",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CTKA3",
+    "name": "Karsten",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CTKA4",
+    "name": "Karsten",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CTNM3",
+    "name": "Coteminas",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CTNM4",
+    "name": "Coteminas",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CTSA3",
+    "name": "Santanense",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CTSA4",
+    "name": "Santanense",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CTSA8",
+    "name": "Santanense",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CURY3",
+    "name": "Cury",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CVCB3",
+    "name": "CVC",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CXSE3",
+    "name": "Caixa Seguridade",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "CYRE3",
+    "name": "Cyrela",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "DASA3",
+    "name": "Dasa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "DESK3",
+    "name": "Desktop",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "DEXP3",
+    "name": "Dexxos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "DEXP4",
+    "name": "Dexxos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "DIRR3",
+    "name": "Direcional",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "DMFN3",
+    "name": "DMFN3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "DMMO3",
+    "name": "Dommo Energia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "DMVF3",
+    "name": "D1000 Varejo Farma",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "DOHL3",
+    "name": "Döhler",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "DOHL4",
+    "name": "Döhler",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "DOTZ3",
+    "name": "Dotz",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "DTCY3",
+    "name": "Dtcom",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "DTEX3",
+    "name": "DTEX3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "DXCO3",
+    "name": "Dexco",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EALT3",
+    "name": "Electro Aço Altona",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EALT4",
+    "name": "Electro Aço Altona",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ECOR3",
+    "name": "EcoRodovias",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ECPR3",
+    "name": "Encorpar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ECPR4",
+    "name": "Encorpar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EEEL3",
+    "name": "CEEE GT",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EEEL4",
+    "name": "CEEE GT",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EGIE3",
+    "name": "Engie",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EKTR3",
+    "name": "Elektro",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EKTR4",
+    "name": "Elektro",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ELET3",
+    "name": "Eletrobras",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ELET5",
+    "name": "Eletrobras",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ELET6",
+    "name": "Eletrobras",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ELMD3",
+    "name": "Eletromidia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EMAE3",
+    "name": "EMAE",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EMAE4",
+    "name": "EMAE",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EMBR3",
+    "name": "Embraer",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ENAT3",
+    "name": "Enauta",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ENBR3",
+    "name": "EDP Brasil",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ENEV3",
+    "name": "Eneva",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ENGI3",
+    "name": "Energisa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ENGI4",
+    "name": "Energisa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ENJU3",
+    "name": "Enjoei",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ENMT3",
+    "name": "Energisa MT",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ENMT4",
+    "name": "Energisa MT",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EPAR3",
+    "name": "EPAR3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EQMA3B",
+    "name": "Equatorial Maranhão",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EQPA3",
+    "name": "Equatorial Energia Pará",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EQPA5",
+    "name": "Equatorial Energia Pará",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EQPA6",
+    "name": "Equatorial Energia Pará",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EQPA7",
+    "name": "Equatorial Energia Pará",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EQTL3",
+    "name": "Equatorial Energia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ESPA3",
+    "name": "Espaçolaser",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ESTR3",
+    "name": "Estrela",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ESTR4",
+    "name": "Estrela",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ETER3",
+    "name": "Eternit",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EUCA3",
+    "name": "Eucatex",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EUCA4",
+    "name": "Eucatex",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EVEN3",
+    "name": "Even",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "EZTC3",
+    "name": "EZTEC",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "FESA3",
+    "name": "Ferbasa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "FESA4",
+    "name": "Ferbasa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "FHER3",
+    "name": "Fertilizantes Heringer",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "FIEI3",
+    "name": "FIEI3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "FIGE3",
+    "name": "Investimentos Bemge",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "FIGE4",
+    "name": "Investimentos Bemge",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "FIQE3",
+    "name": "Unifique",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "FLRY3",
+    "name": "Fleury",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "FNCN3",
+    "name": "Finansinos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "FRAS3",
+    "name": "Fras-le",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "FRIO3",
+    "name": "Metalfrio",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "FRTA3",
+    "name": "Pomi Frutas",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GEPA3",
+    "name": "Rio Paranapanema Energia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GEPA4",
+    "name": "Rio Paranapanema Energia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GETT3",
+    "name": "Getnet",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GETT4",
+    "name": "Getnet",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GFSA3",
+    "name": "Gafisa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GGBR3",
+    "name": "Gerdau",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GGBR4",
+    "name": "Gerdau",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GGPS3",
+    "name": "GPS",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GMAT3",
+    "name": "Grupo Mateus",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GNDI3",
+    "name": "NotreDame Intermédica",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GOAU3",
+    "name": "Metalúrgica Gerdau",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GOAU4",
+    "name": "Metalúrgica Gerdau",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GOLL4",
+    "name": "GOL",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GPAR3",
+    "name": "CELGPAR",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GPCP3",
+    "name": "GPCP3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GPCP4",
+    "name": "GPCP4",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GRND3",
+    "name": "Grendene",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GSHP3",
+    "name": "General Shopping & Outlets",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "GUAR3",
+    "name": "Guararapes",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "HAGA3",
+    "name": "Haga",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "HAGA4",
+    "name": "Haga",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "HAPV3",
+    "name": "Hapvida",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "HBOR3",
+    "name": "Helbor",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "HBRE3",
+    "name": "HBR Realty",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "HBSA3",
+    "name": "Hidrovias do Brasil",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "HBTS5",
+    "name": "Habitasul",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "HETA3",
+    "name": "Hercules",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "HETA4",
+    "name": "Hercules",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "HGTX3",
+    "name": "Hering",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "HOOT4",
+    "name": "Hotéis Othon",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "HYPE3",
+    "name": "Hypera",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "IFCM3",
+    "name": "Infracommerce",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "IGBR3",
+    "name": "IGB Eletrônica",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "IGTA3",
+    "name": "IGTA3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "IGTI3",
+    "name": "Iguatemi",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "IGTI3",
+    "name": "Jereissati Participações",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "IGTI4",
+    "name": "Iguatemi",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "IGTI4",
+    "name": "Jereissati Participações",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "INEP3",
+    "name": "Inepar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "INEP4",
+    "name": "Inepar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "INTB3",
+    "name": "Intelbras",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "IRBR3",
+    "name": "IRB Brasil RE",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ITSA3",
+    "name": "Itaúsa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ITSA4",
+    "name": "Itaúsa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ITUB3",
+    "name": "Itaú Unibanco",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ITUB4",
+    "name": "Itaú Unibanco",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "JALL3",
+    "name": "Jalles Machado",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "JBDU3",
+    "name": "JBDU3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "JBDU4",
+    "name": "JBDU4",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "JBSS3",
+    "name": "JBS",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "JFEN3",
+    "name": "João Fortes",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "JHSF3",
+    "name": "JHSF",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "JOPA3",
+    "name": "Josapar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "JOPA4",
+    "name": "Josapar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "JPSA3",
+    "name": "JPSA3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "JSLG3",
+    "name": "JSL",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "KEPL3",
+    "name": "Kepler Weber",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "KLBN3",
+    "name": "Klabin",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "KLBN4",
+    "name": "Klabin",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "KRSA3",
+    "name": "Kora Saúde",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LAME3",
+    "name": "Lojas Americanas",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LAME4",
+    "name": "Lojas Americanas",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LAND3",
+    "name": "Terra Santa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LAVV3",
+    "name": "Lavvi Incorporadora",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LCAM3",
+    "name": "Locamerica",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LEVE3",
+    "name": "Mahle Metal Leve",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LIGT3",
+    "name": "Light",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LINX3",
+    "name": "Linx",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LIPR3",
+    "name": "Eletropar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LJQQ3",
+    "name": "Lojas Quero-Quero",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LLIS3",
+    "name": "LLIS3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LOGG3",
+    "name": "LOG CP",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LOGN3",
+    "name": "Log-In",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LPSB3",
+    "name": "Lopes",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LREN3",
+    "name": "Lojas Renner",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LUPA3",
+    "name": "Lupatech",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LUXM3",
+    "name": "Trevisa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LUXM4",
+    "name": "Trevisa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LVTC3",
+    "name": "WDC Networks",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "LWSA3",
+    "name": "Locaweb",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MAPT3",
+    "name": "Cemepe",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MAPT4",
+    "name": "Cemepe",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MATD3",
+    "name": "Mater Dei",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MBLY3",
+    "name": "Mobly",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MDIA3",
+    "name": "M. Dias Branco",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MDNE3",
+    "name": "Moura Dubeux",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MEAL3",
+    "name": "IMC Alimentação",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MEGA3",
+    "name": "OMEGA ENERGIA S.A.",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MELK3",
+    "name": "Melnick",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MERC3",
+    "name": "Mercantil do Brasil Financeira",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MERC4",
+    "name": "Mercantil do Brasil Financeira",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MGEL3",
+    "name": "Mangels",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MGEL4",
+    "name": "Mangels",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MGLU3",
+    "name": "Magazine Luiza",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MILS3",
+    "name": "Mills",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MLAS3",
+    "name": "Multilaser",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MMAQ4",
+    "name": "Minasmáquinas",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MMXM3",
+    "name": "MMX Mineração",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MNDL3",
+    "name": "Mundial",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MNPR3",
+    "name": "Minupar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MOAR3",
+    "name": "Monteiro Aranha",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MODL3",
+    "name": "Banco Modal",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MODL4",
+    "name": "Banco Modal",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MOSI3",
+    "name": "Mosaico",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MOVI3",
+    "name": "Movida",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MRFG3",
+    "name": "Marfrig",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MRSA3B",
+    "name": "MRS Logística",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MRSA5B",
+    "name": "MRS Logística",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MRSA6B",
+    "name": "MRS Logística",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MRVE3",
+    "name": "MRV",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MSPA3",
+    "name": "Melhoramentos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MSPA4",
+    "name": "Melhoramentos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MTIG3",
+    "name": "Metalgráfica Iguaçu",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MTIG4",
+    "name": "Metalgráfica Iguaçu",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MTRE3",
+    "name": "Mitre Realty",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MTSA3",
+    "name": "METISA",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MTSA4",
+    "name": "METISA",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MULT3",
+    "name": "Multiplan",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MWET3",
+    "name": "Wetzel",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MWET4",
+    "name": "Wetzel",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "MYPK3",
+    "name": "Iochpe-Maxion",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "NEOE3",
+    "name": "Neoenergia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "NEXP3",
+    "name": "Brasil Brokers",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "NGRD3",
+    "name": "Neogrid",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "NINJ3",
+    "name": "GetNinjas",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "NORD3",
+    "name": "Nordon",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "NTCO3",
+    "name": "Natura",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ODER4",
+    "name": "Conservas Oderich",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ODPV3",
+    "name": "Odontoprev",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "OFSA3",
+    "name": "Ourofino Saúde Animal",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "OIBR3",
+    "name": "Oi",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "OIBR4",
+    "name": "Oi",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "OMGE3",
+    "name": "Omega Geração",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ONCO3",
+    "name": "Oncoclínicas",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "OPCT3",
+    "name": "OceanPact",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ORVR3",
+    "name": "Orizon",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "OSXB3",
+    "name": "OSX Brasil",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PARD3",
+    "name": "Hermes Pardini",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PATI3",
+    "name": "Panatlântica",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PATI4",
+    "name": "Panatlântica",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PCAR3",
+    "name": "Grupo Pão de Açúcar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PDGR3",
+    "name": "PDG Realty",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PDTC3",
+    "name": "Padtec",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PEAB3",
+    "name": "Participações Aliança da Bahia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PEAB4",
+    "name": "Participações Aliança da Bahia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PETR3",
+    "name": "Petrobras",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PETR4",
+    "name": "Petrobras",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PETZ3",
+    "name": "Petz",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PFRM3",
+    "name": "Profarma",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PGMN3",
+    "name": "Pague Menos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PINE4",
+    "name": "PINE",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PLAS3",
+    "name": "Plascar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PLPL3",
+    "name": "Plano&Plano",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PMAM3",
+    "name": "Paranapanema",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PNVL3",
+    "name": "Dimed",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PNVL4",
+    "name": "Dimed",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "POMO3",
+    "name": "Marcopolo",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "POMO4",
+    "name": "Marcopolo",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PORT3",
+    "name": "Wilson Sons",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "POSI3",
+    "name": "Positivo",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "POWE3",
+    "name": "Focus Energia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PRIO3",
+    "name": "PetroRio",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PRNR3",
+    "name": "Priner",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PSSA3",
+    "name": "Porto Seguro",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PTBL3",
+    "name": "Portobello",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PTNT3",
+    "name": "Pettenati",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "PTNT4",
+    "name": "Pettenati",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "QUAL3",
+    "name": "Qualicorp",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RADL3",
+    "name": "RaiaDrogasil",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RAIL3",
+    "name": "Rumo",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RAIZ4",
+    "name": "Raízen",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RANI3",
+    "name": "Irani",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RAPT3",
+    "name": "Randon",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RAPT4",
+    "name": "Randon",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RCSL3",
+    "name": "Recrusul",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RCSL4",
+    "name": "Recrusul",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RDNI3",
+    "name": "RNI",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RDOR3",
+    "name": "Rede D'Or",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RECV3",
+    "name": "PetroRecôncavo",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "REDE3",
+    "name": "Rede Energia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RENT3",
+    "name": "Localiza",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RNEW3",
+    "name": "Renova Energia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RNEW4",
+    "name": "Renova Energia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ROMI3",
+    "name": "Indústrias ROMI",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RPAD3",
+    "name": "Alfa Holdings",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RPAD5",
+    "name": "Alfa Holdings",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RPAD6",
+    "name": "Alfa Holdings",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RPMG3",
+    "name": "Refinaria de Manguinhos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RRRP3",
+    "name": "3R Petroleum",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RSID3",
+    "name": "Rossi Residencial",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "RSUL4",
+    "name": "Metalúrgica Riosulense",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SANB3",
+    "name": "Banco Santander",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SANB4",
+    "name": "Banco Santander",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SAPR3",
+    "name": "Sanepar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SAPR4",
+    "name": "Sanepar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SBFG3",
+    "name": "Grupo SBF",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SBSP3",
+    "name": "Sabesp",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SCAR3",
+    "name": "São Carlos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SEER3",
+    "name": "Ser Educacional",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SEQL3",
+    "name": "Sequoia Logística",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SGPS3",
+    "name": "Springs",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SHOW3",
+    "name": "Time For Fun",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SHUL3",
+    "name": "Schulz",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SHUL4",
+    "name": "Schulz",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SIMH3",
+    "name": "Simpar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SLCE3",
+    "name": "SLC Agrícola",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SLED3",
+    "name": "Saraiva",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SLED4",
+    "name": "Saraiva",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SMFT3",
+    "name": "Smart Fit",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SMLS3",
+    "name": "Smiles",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SMTO3",
+    "name": "São Martinho",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SNSY3",
+    "name": "Sansuy",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SNSY5",
+    "name": "Sansuy",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SNSY6",
+    "name": "Sansuy",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SOJA3",
+    "name": "Boa Safra Sementes",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SOMA3",
+    "name": "Grupo Soma",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SOND3",
+    "name": "Sondotécnica",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SOND5",
+    "name": "Sondotécnica",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SOND6",
+    "name": "Sondotécnica",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SQIA3",
+    "name": "Sinqia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "STBP3",
+    "name": "Santos Brasil",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SULA3",
+    "name": "SulAmérica",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SULA4",
+    "name": "SulAmérica",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SUZB3",
+    "name": "Suzano",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "SYNE3",
+    "name": "SYN",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TAEE3",
+    "name": "Taesa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TAEE4",
+    "name": "Taesa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TASA3",
+    "name": "Taurus",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TASA4",
+    "name": "Taurus",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TCNO3",
+    "name": "Tecnosolo",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TCNO4",
+    "name": "Tecnosolo",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TCSA3",
+    "name": "Tecnisa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TECN3",
+    "name": "Technos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TEKA3",
+    "name": "Teka",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TEKA4",
+    "name": "Teka",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TELB3",
+    "name": "Telebras",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TELB4",
+    "name": "Telebras",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TEND3",
+    "name": "Construtora Tenda",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TESA3",
+    "name": "Terra Santa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TFCO4",
+    "name": "Track & Field",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TGMA3",
+    "name": "Tegma",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TIET3",
+    "name": "AES Tietê Energia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TIET4",
+    "name": "AES Tietê Energia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TIMS3",
+    "name": "TIM",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TKNO3",
+    "name": "Tekno",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TKNO4",
+    "name": "Tekno",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TOTS3",
+    "name": "Totvs",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TPIS3",
+    "name": "Triunfo",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TRAD3",
+    "name": "Traders Club",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TRIS3",
+    "name": "Trisul",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TRPL3",
+    "name": "Transmissão Paulista",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TRPL4",
+    "name": "Transmissão Paulista",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TTEN3",
+    "name": "3tentos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "TUPY3",
+    "name": "Tupy",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "UCAS3",
+    "name": "Unicasa",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "UGPA3",
+    "name": "Ultrapar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "UNIP3",
+    "name": "Unipar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "UNIP5",
+    "name": "Unipar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "UNIP6",
+    "name": "Unipar",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "USIM3",
+    "name": "Usiminas",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "USIM5",
+    "name": "Usiminas",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "USIM6",
+    "name": "Usiminas",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "VALE3",
+    "name": "Vale",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "VAMO3",
+    "name": "Grupo Vamos",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "VBBR3",
+    "name": "Vibra Energia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "VIIA3",
+    "name": "Via",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "VITT3",
+    "name": "Vittia",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "VIVA3",
+    "name": "Vivara",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "VIVR3",
+    "name": "Viver",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "VIVT3",
+    "name": "Vivo",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "VLID3",
+    "name": "Valid",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "VSPT3",
+    "name": "FCA",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "VSTE3",
+    "name": "LE LIS BLANC",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "VULC3",
+    "name": "Vulcabras",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "VVAR3",
+    "name": "VVAR3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "VVEO3",
+    "name": "Viveo",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "WEGE3",
+    "name": "WEG",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "WEST3",
+    "name": "Westwing",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "WHRL3",
+    "name": "Whirlpool",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "WHRL4",
+    "name": "Whirlpool",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "WIZC3",
+    "name": "Wiz Soluções",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "WIZS3",
+    "name": "WIZS3",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "WLMM3",
+    "name": "WLM",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "WLMM4",
+    "name": "WLM",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "YDUQ3",
+    "name": "YDUQS",
+    "asset_type_id": 2
+  },
+  {
+    "symbol": "ZAMP3",
+    "name": "Zamp",
+    "asset_type_id": 2
+  }
+]

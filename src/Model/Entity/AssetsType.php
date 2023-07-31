@@ -6,17 +6,13 @@ namespace App\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * Dividend Entity
+ * AssetsType Entity
  *
  * @property int $id
- * @property int $asset_id
- * @property \Cake\I18n\FrozenDate $date
- * @property string $value
+ * @property string $name
  * @property \Cake\I18n\FrozenTime|null $created
- *
- * @property \App\Model\Entity\Asset $asset
  */
-class Dividend extends Entity
+class AssetsType extends Entity
 {
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
@@ -28,10 +24,7 @@ class Dividend extends Entity
      * @var array<string, bool>
      */
     protected $_accessible = [
-        'asset_id' => true,
-        'date' => true,
-        'value' => true,
+        'name' => true,
         'created' => true,
-        'asset' => true,
     ];
 }

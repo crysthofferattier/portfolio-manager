@@ -24,9 +24,8 @@ class TransactionsFixture extends TestFixture
                 'quantity' => 1.5,
                 'value' => 1.5,
                 'total' => 1.5,
-                'trade_date' => '2023-07-30',
-                'type_id' => 1,
-                'created' => '2023-07-30 20:45:49',
+                'trade_date' => '2023-07-31',
+                'created' => '2023-07-31 21:29:17',
             ],
         ];
         parent::init();

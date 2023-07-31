@@ -21,8 +21,9 @@ class DividendsFixture extends TestFixture
             [
                 'id' => 1,
                 'asset_id' => 1,
-                'date' => '2023-07-30',
+                'date' => '2023-07-31',
                 'value' => 1.5,
+                'created' => '2023-07-31 21:29:17',
             ],
         ];
         parent::init();

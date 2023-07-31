@@ -1,0 +1,42 @@
+[
+    {
+        "symbol": "KNCR11",
+        "name": "Kinea Rendimentos Imobiliários FII",
+        "asset_type_id": 1
+    },
+    {
+        "symbol": "HGLG11",
+        "name": "CSHG Logística",
+        "asset_type_id": 1
+    },
+    {
+        "symbol": "BCFF11",
+        "name": "BTG Pactual Fundo de Fundos",
+        "asset_type_id": 1
+    },
+    {
+        "symbol": "CPTS11",
+        "name": "Capitânia Securities II",
+        "asset_type_id": 1
+    },
+    {
+        "symbol": "BBAS3",
+        "name": "Banco do Brasil",
+        "asset_type_id": 2
+    },
+    {
+        "symbol": "ITSA4",
+        "name": "Itaúsa",
+        "asset_type_id": 2
+    },
+    {
+        "symbol": "PETR4",
+        "name": "Petrobras",
+        "asset_type_id": 2
+    },
+    {
+        "symbol": "TAEE11",
+        "name": "Transmissora Alianca de Energia Eltrc SA",
+        "asset_type_id": 2
+    }
+]

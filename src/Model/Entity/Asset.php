@@ -10,9 +10,13 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $symbol
- * @property int $type_id
+ * @property string $name
+ * @property int $asset_type_id
+ * @property \Cake\I18n\FrozenTime|null $created
  *
- * @property \App\Model\Entity\TransactionsType $transactions_type
+ * @property \App\Model\Entity\Asset[] $assets
+ * @property \App\Model\Entity\Dividend[] $dividends
+ * @property \App\Model\Entity\Transaction[] $transactions
  */
 class Asset extends Entity
 {
@@ -27,7 +31,11 @@ class Asset extends Entity
      */
     protected $_accessible = [
         'symbol' => true,
-        'type_id' => true,
-        'transactions_type' => true,
+        'name' => true,
+        'asset_type_id' => true,
+        'created' => true,
+        'assets' => true,
+        'dividends' => true,
+        'transactions' => true,
     ];
 }

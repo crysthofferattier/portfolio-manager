@@ -9,7 +9,7 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-INSERT INTO `users` VALUES (1,'crysthofferattier@gmail.com','$2y$10$1n8QVsQUACvu.Bxj8ka6heaZxvMcrsA35BtS8gDGqj/Y.LPCn/ciG','2023-07-28 21:23:32','2023-07-28 21:23:32'),(2,'test@email.com','$2y$10$9x8c.jo1jORbOqcSdQZQ/.fQjVdIM0FvshgP2PLABArEOuYtL.eNa','2023-07-28 21:24:45','2023-07-28 21:24:45'),(3,'test1@email.com','$2y$10$fwqK6F.rCCfU.99kMKq3i.Bg8U8vLkwP/DgizfmWHjnqART9wKew6','2023-07-29 02:09:28','2023-07-29 02:09:28');
+INSERT INTO `users` VALUES (1,'test@email.com','$2y$10$1n8QVsQUACvu.Bxj8ka6heaZxvMcrsA35BtS8gDGqj/Y.LPCn/ciG','2023-07-28 21:23:32','2023-07-28 21:23:32'),(2,'test1@email.com','$2y$10$fwqK6F.rCCfU.99kMKq3i.Bg8U8vLkwP/DgizfmWHjnqART9wKew6','2023-07-29 02:09:28','2023-07-29 02:09:28');
 
 CREATE TABLE assets_type (
     id INT AUTO_INCREMENT PRIMARY KEY,

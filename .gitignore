@@ -4,7 +4,8 @@
 /config/.env
 /logs/*
 /tmp/*
-/resources/*
+/resources/database/*
+/resources/scripts/*
 /vendor/*
 
 # OS generated files #

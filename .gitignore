@@ -5,8 +5,7 @@
 /logs/*
 /tmp/*
 /vendor/*
-/resources/database/*
-/resources/scripts/*
+/resources/*
 
 # OS generated files #
 ######################

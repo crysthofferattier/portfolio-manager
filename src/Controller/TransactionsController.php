@@ -49,13 +49,14 @@ class TransactionsController extends AppController
     {
         $transaction = $this->Transactions->get($id, [
             'contain' => [
-                'TransactionsType',
-                'Assets'
+                'Assets' => [
+                    'AssetsType'
+                ]
             ],
         ]);
 
-        $transaction->trade_date = $this->DateFormat
-            ->convertDateToPtBR($transaction->trade_date->toDateString());
+        // $transaction->trade_date = $this->DateFormat
+        //     ->convertDateToPtBR($transaction->trade_date->toDateString());
 
         $this->set(compact('transaction'));
         $this->viewBuilder()->setOption('serialize', ['transaction']);
@@ -99,8 +100,8 @@ class TransactionsController extends AppController
         $transaction = $this->Transactions->get($id);
         $transaction = $this->Transactions->patchEntity($transaction, $this->request->getData());
 
-        $transaction->trade_date = $this->DateFormat
-            ->convertDate($this->request->getData('trade_date'));
+        // $transaction->trade_date = $this->DateFormat
+        //     ->convertDate($this->request->getData('trade_date'));
 
         if ($this->Transactions->save($transaction)) {
             $message = 'Saved';

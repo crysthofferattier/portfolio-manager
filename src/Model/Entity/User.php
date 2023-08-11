@@ -6,6 +6,7 @@ namespace App\Model\Entity;
 use Authentication\PasswordHasher\DefaultPasswordHasher;
 use Cake\Auth\DefaultPasswordHasher as AuthDefaultPasswordHasher;
 use Cake\ORM\Entity;
+use Authentication\IdentityInterface;
 
 /**
  * User Entity
@@ -16,7 +17,7 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime|null $created
  * @property \Cake\I18n\FrozenTime|null $modified
  */
-class User extends Entity
+class User extends Entity implements IdentityInterface
 {
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
@@ -48,5 +49,21 @@ class User extends Entity
         if (strlen($password) > 0) {
             return (new AuthDefaultPasswordHasher())->hash($password);
         }
+    }
+
+    /**
+     * Authentication\IdentityInterface method
+     */
+    public function getIdentifier()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Authentication\IdentityInterface method
+     */
+    public function getOriginalData()
+    {
+        return $this;
     }
 }

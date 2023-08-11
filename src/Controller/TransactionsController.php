@@ -198,12 +198,16 @@ class TransactionsController extends AppController
     public function totalPerAsset()
     {
         $query = $this->Transactions->find();
+
+        $total = $this->Transactions->find()            
+            ->sumOf('total');
+
         $result = $query->select([
             'name' => 'symbol',
             'y' => $query->func()->sum('total'),
             'x' => $query->func()->sum('quantity'),
             'type_id' => 'AssetsType.id',
-            'p' => 'concat(round(( sum(total)/5969.37 * 100 ),2),\'%\')'
+            'p' => 'concat(round(( sum(total)/' . $total . ' * 100 ),2),\'\')'
         ])->contain([
             'Assets' => [
                 'AssetsType'

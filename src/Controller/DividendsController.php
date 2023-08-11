@@ -67,8 +67,8 @@ class DividendsController extends AppController
         $this->request->allowMethod(['post', 'put']);
         $dividend = $this->Dividends->newEntity($this->request->getData());
 
-        // $dividend->date = $this->DateFormat
-        //     ->convertDate($this->request->getData('date'));
+        $dividend->date = $this->DateFormat
+            ->convertDate($this->request->getData('date'));
 
         if ($this->Dividends->save($dividend)) {
             $message = 'Saved';
@@ -159,5 +159,42 @@ class DividendsController extends AppController
 
 
         $this->set(compact('stocks', 'fiis', 'total'));
+    }
+
+    public function monthlyDividends()
+    {
+        $query = $this->Dividends->find();
+        $monthlyDividends = $query->select([
+            'label' => 'MONTHNAME(date)',
+            'y' => $query->func()->sum('value')
+        ])->group('MONTHNAME(date)')
+        ->order('FIELD(label,"January","February","March", "June", "July","August","September","October","November","December")');
+
+        $this->set(compact('monthlyDividends'));
+    }
+
+    public function monthlyDividendsPerType()
+    {
+        // $user = $this->UserInfo->getUserInfo();
+
+        // $user = $this->Authentication->getIdentity();
+        // print_r($user->id);
+        // exit();
+
+        $query = $this->Dividends->find();
+        $monthlyDividendsPerType = $query->select([
+            'label' => 'MONTHNAME(date)',
+            'y' => $query->func()->sum('value'),
+            'type_id' => 'AssetsType.id'
+        ])->contain([
+            'Assets' => [
+                'AssetsType'
+            ]
+        ])->group([
+            'MONTHNAME(date)',
+            'AssetsType.id'
+        ])->order('FIELD(label,"January","February","March", "June", "July","August","September","October","November","December")');
+
+        $this->set(compact('monthlyDividendsPerType'));
     }
 }

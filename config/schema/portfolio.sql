@@ -33,6 +33,7 @@ CREATE TABLE dividends (
     id INT AUTO_INCREMENT PRIMARY KEY,
     asset_id INT NOT NULL,
     date DATE NOT NULL,
+    share INT NOT NULL,
     value DECIMAL(10, 2) NOT NULL,
     created DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (asset_id) REFERENCES assets(id)

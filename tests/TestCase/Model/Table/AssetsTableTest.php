@@ -25,6 +25,7 @@ class AssetsTableTest extends TestCase
      */
     protected $fixtures = [
         'app.Assets',
+        'app.AssetsType',
         'app.Dividends',
         'app.Transactions',
     ];

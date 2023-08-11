@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\Model\Table;
 
+use Cake\Http\Session;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
@@ -11,6 +12,7 @@ use Cake\Validation\Validator;
 /**
  * Assets Model
  *
+ * @property \App\Model\Table\AssetsTypeTable&\Cake\ORM\Association\BelongsTo $AssetsType
  * @property \App\Model\Table\DividendsTable&\Cake\ORM\Association\HasMany $Dividends
  * @property \App\Model\Table\TransactionsTable&\Cake\ORM\Association\HasMany $Transactions
  *
@@ -47,7 +49,12 @@ class AssetsTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
+        //$this->addBehavior('UserFootprint');
 
+        $this->belongsTo('Users', [
+            'foreignKey' => 'user_id',
+            'joinType' => 'INNER',
+        ]);
         $this->belongsTo('AssetsType', [
             'foreignKey' => 'asset_type_id',
             'joinType' => 'INNER',
@@ -81,6 +88,10 @@ class AssetsTable extends Table
             ->notEmptyString('name');
 
         $validator
+            ->integer('user_id')
+            ->notEmptyString('user_id');
+
+        $validator
             ->integer('asset_type_id')
             ->notEmptyString('asset_type_id');
 
@@ -96,6 +107,7 @@ class AssetsTable extends Table
      */
     public function buildRules(RulesChecker $rules): RulesChecker
     {
+        $rules->add($rules->existsIn('user_id', 'Users'), ['errorField' => 'user_id']);
         $rules->add($rules->existsIn('asset_type_id', 'AssetsType'), ['errorField' => 'asset_type_id']);
 
         return $rules;

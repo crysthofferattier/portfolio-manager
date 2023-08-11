@@ -109,6 +109,16 @@ return static function (RouteBuilder $routes) {
                     'action' => 'getTotalDividendsPerType',
                     'method' => 'GET',
                     'path' => '/get-total-dividends-per-type'
+                ],
+                'monthlyDividends' => [
+                    'action' => 'monthlyDividends',
+                    'method' => 'GET',
+                    'path' => '/dividends-per-month'
+                ],
+                'monthlyDividendsPerType' => [
+                    'action' => 'monthlyDividendsPerType',
+                    'method' => 'GET',
+                    'path' => '/dividends-per-month-type'
                 ]
             ]
         ]);

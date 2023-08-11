@@ -57,6 +57,8 @@ class AssetsController extends AppController
         $this->request->allowMethod(['post', 'put']);
         $asset = $this->Assets->newEntity($this->request->getData());
 
+        $asset->user_id = $this->Authentication->getIdentity()->id;
+
         if ($this->Assets->save($asset)) {
             $message = 'Asset saved!';
         } else {

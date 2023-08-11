@@ -22,8 +22,9 @@ class AssetsFixture extends TestFixture
                 'id' => 1,
                 'symbol' => 'Lorem ipsum dolor ',
                 'name' => 'Lorem ipsum dolor sit amet',
+                'user_id' => 1,
                 'asset_type_id' => 1,
-                'created' => '2023-07-31 21:29:17',
+                'created' => '2023-08-09 22:29:50',
             ],
         ];
         parent::init();

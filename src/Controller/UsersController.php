@@ -7,7 +7,6 @@ namespace App\Controller;
 use Cake\View\JsonView;
 use Cake\Utility\Security;
 use Firebase\JWT\JWT;
-
 /**
  * Users Controller
  *

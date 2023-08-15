@@ -46,7 +46,7 @@ class AppController extends Controller
         $this->loadComponent('Authentication.Authentication');
 
         $this->loadComponent('DateFormat');
-        //$this->loadComponent('UserInfo');
+        $this->loadComponent('Authorization.Authorization');
 
         /*
          * Enable the following component for recommended CakePHP form protection settings.

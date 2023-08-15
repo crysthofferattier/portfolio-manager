@@ -36,6 +36,11 @@ use Authentication\AuthenticationServiceProviderInterface;
 use Authentication\Middleware\AuthenticationMiddleware;
 use Cake\Routing\Router;
 use Psr\Http\Message\ServerRequestInterface;
+use Authorization\AuthorizationService;
+use Authorization\AuthorizationServiceInterface;
+use Authorization\AuthorizationServiceProviderInterface;
+use Authorization\Middleware\AuthorizationMiddleware;
+use Authorization\Policy\OrmResolver;
 
 /**
  * Application setup class.
@@ -44,7 +49,9 @@ use Psr\Http\Message\ServerRequestInterface;
  * want to use in your application.
  */
 class Application extends BaseApplication
-implements AuthenticationServiceProviderInterface
+implements
+    AuthenticationServiceProviderInterface,
+    AuthorizationServiceProviderInterface
 {
     /**
      * Load all the application configuration and bootstrap logic.
@@ -104,7 +111,8 @@ implements AuthenticationServiceProviderInterface
             ->add(new RoutingMiddleware($this))
             ->add(new BodyParserMiddleware())
             // Add the AuthenticationMiddleware. It should be after routing and body parser.
-            ->add(new AuthenticationMiddleware($this));
+            ->add(new AuthenticationMiddleware($this))
+            ->add(new AuthorizationMiddleware($this));
 
         // Cross Site Request Forgery (CSRF) Protection Middleware
         // https://book.cakephp.org/4/en/security/csrf.html#cross-site-request-forgery-csrf-middleware
@@ -139,12 +147,13 @@ implements AuthenticationServiceProviderInterface
         $this->addOptionalPlugin('Bake');
 
         $this->addPlugin('Migrations');
+        $this->addPlugin('Authorization');
 
         // Load more plugins here
     }
 
     public function getAuthenticationService(ServerRequestInterface $request): AuthenticationServiceInterface
-    {        
+    {
         $service = new AuthenticationService();
 
         $fields = [
@@ -169,4 +178,12 @@ implements AuthenticationServiceProviderInterface
 
         return $service;
     }
+
+    public function getAuthorizationService(ServerRequestInterface $request): AuthorizationServiceInterface
+    {
+        $resolver = new OrmResolver();
+
+        return new AuthorizationService($resolver);
+    }
+
 }

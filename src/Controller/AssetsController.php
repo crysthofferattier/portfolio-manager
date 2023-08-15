@@ -25,7 +25,9 @@ class AssetsController extends AppController
      */
     public function index()
     {
+        $this->Authorization->skipAuthorization();
         $assets = $this->Assets->find()
+            ->where(['user_id' => $this->Authentication->getIdentity()->id])
             ->contain(['AssetsType']);
 
         $this->set(compact('assets'));
@@ -40,7 +42,11 @@ class AssetsController extends AppController
      */
     public function view($id = null)
     {
+        $this->Authorization->skipAuthorization();
         $asset = $this->Assets->get($id, [
+            'where' => [
+                'user_id' => $this->Authentication->getIdentity()->id,
+            ],
             'contain' => ['AssetsType'],
         ]);
 
@@ -82,8 +88,18 @@ class AssetsController extends AppController
         $asset = $this->Assets->get($id, [
             'contain' => [],
         ]);
+        $this->Authorization->authorize($asset);
+
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $asset = $this->Assets->patchEntity($asset, $this->request->getData());
+            $asset->user_id = $this->Authentication->getIdentity()->id;
+            $asset = $this->Assets->patchEntity(
+                $asset,
+                $this->request->getData(),
+                [
+                    // Added: Disable modification of user_id.
+                    'accessibleFields' => ['user_id' => false]
+                ]
+            );
             if ($this->Assets->save($asset)) {
                 $this->Flash->success(__('The asset has been saved.'));
 
@@ -106,6 +122,8 @@ class AssetsController extends AppController
     {
         $this->request->allowMethod(['post', 'delete']);
         $asset = $this->Assets->get($id);
+        $this->Authorization->authorize($asset);
+        
         if ($this->Assets->delete($asset)) {
             $this->Flash->success(__('The asset has been deleted.'));
         } else {

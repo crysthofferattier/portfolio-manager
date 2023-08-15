@@ -36,6 +36,7 @@ class UsersController extends AppController
 
     public function login()
     {
+        $this->Authorization->skipAuthorization();
         $result = $this->Authentication->getResult();
         if ($result->isValid()) {
             $privateKey = file_get_contents(CONFIG . '/jwt.key');
@@ -61,6 +62,7 @@ class UsersController extends AppController
 
     public function logout()
     {
+        $this->Authorization->skipAuthorization();
         $result = $this->Authentication->getResult();
         // regardless of POST or GET, redirect if user is logged in
         if ($result && $result->isValid()) {

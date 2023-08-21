@@ -10,7 +10,9 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property int $asset_id
+ * @property int $user_id
  * @property \Cake\I18n\FrozenDate $date
+ * @property int|null $share
  * @property string $value
  * @property \Cake\I18n\FrozenTime|null $created
  *
@@ -29,7 +31,9 @@ class Dividend extends Entity
      */
     protected $_accessible = [
         'asset_id' => true,
+        'user_id' => true,
         'date' => true,
+        'share' => true,
         'value' => true,
         'created' => true,
         'asset' => true,

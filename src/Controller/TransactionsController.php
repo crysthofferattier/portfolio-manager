@@ -27,13 +27,17 @@ class TransactionsController extends AppController
      */
     public function index()
     {
+        $this->Authorization->skipAuthorization();
+
         $transactions = $this->Transactions->find('all')
-            ->order(['trade_date' => 'DESC'])
             ->contain([
                 'Assets' => [
                     'AssetsType'
-                ]
-            ]);
+                ],
+                'Users'
+            ])->where([
+                'Users.id' => $this->Authentication->getIdentity()->id
+            ])->order(['trade_date' => 'DESC']);
 
         $this->set(compact('transactions'));
     }
@@ -71,9 +75,12 @@ class TransactionsController extends AppController
     {
         $this->request->allowMethod(['post', 'put']);
         $transaction = $this->Transactions->newEntity($this->request->getData());
+        $this->Authorization->authorize($transaction);
 
-        // $transaction->trade_date = $this->DateFormat
+        // $transaction->trade_da$this->Authentication->getIdentity()->id;te = $this->DateFormat
         //     ->convertDate($this->request->getData('trade_date'));
+
+        $transaction->user_id = $this->Authentication->getIdentity()->id;
 
         if ($this->Transactions->save($transaction)) {
             $message = 'Saved';
@@ -140,8 +147,14 @@ class TransactionsController extends AppController
 
     public function totalPortfolio()
     {
+        $this->Authorization->skipAuthorization();
+
         $total = $this->Transactions->find()
-            ->sumOf('total');
+            ->contain([
+                'Users'
+            ])->where([
+                'Users.id' => $this->Authentication->getIdentity()->id
+            ])->sumOf('total');
 
         $this->set(compact('total'));
     }
@@ -152,13 +165,19 @@ class TransactionsController extends AppController
     */
     public function totalPerType($type = null)
     {
+        $this->Authorization->skipAuthorization();
+
         $total = $this->Transactions->find()
             ->contain([
                 'Assets' => [
                     'AssetsType'
-                ]
+                ],
+                'Users'
             ])
-            ->where(['AssetsType.id' => (int) $type])
+            ->where([
+                'AssetsType.id' => (int) $type,
+                'Users.id' => $this->Authentication->getIdentity()->id
+            ])
             ->sumOf('total');
 
         $this->set(compact('total'));
@@ -166,10 +185,16 @@ class TransactionsController extends AppController
 
     public function monthlyTransactions()
     {
+        $this->Authorization->skipAuthorization();
+
         $query = $this->Transactions->find();
         $monthlyTransactions = $query->select([
             'label' => 'MONTHNAME(trade_date)',
             'y' => $query->func()->sum('total')
+        ])->contain([
+            'Users'
+        ])->where([
+            'Users.id' => $this->Authentication->getIdentity()->id
         ])->group('MONTHNAME(trade_date)')
             ->order('FIELD(label,"January","February","March", "June", "July","August","September","October","November","December")');
 
@@ -178,7 +203,10 @@ class TransactionsController extends AppController
 
     public function monthlyTransactionsPerType()
     {
+        $this->Authorization->skipAuthorization();
+
         $query = $this->Transactions->find();
+
         $monthlyTransactions = $query->select([
             'label' => 'MONTHNAME(trade_date)',
             'y' => $query->func()->sum('total'),
@@ -186,7 +214,10 @@ class TransactionsController extends AppController
         ])->contain([
             'Assets' => [
                 'AssetsType'
-            ]
+            ],
+            'Users'
+        ])->where([
+            'Users.id' => $this->Authentication->getIdentity()->id
         ])->group([
             'MONTHNAME(trade_date)',
             'AssetsType.id'
@@ -197,9 +228,11 @@ class TransactionsController extends AppController
 
     public function totalPerAsset()
     {
+        $this->Authorization->skipAuthorization();
+
         $query = $this->Transactions->find();
 
-        $total = $this->Transactions->find()            
+        $total = $this->Transactions->find()
             ->sumOf('total');
 
         $result = $query->select([
@@ -210,8 +243,11 @@ class TransactionsController extends AppController
             'p' => 'concat(round(( sum(total)/' . $total . ' * 100 ),2),\'\')'
         ])->contain([
             'Assets' => [
-                'AssetsType'
+                'AssetsType',
+                'Users'
             ]
+        ])->where([
+            'Users.id' => $this->Authentication->getIdentity()->id
         ])->group([
             'symbol',
             'AssetsType.id'

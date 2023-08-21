@@ -10,6 +10,7 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property int $asset_id
+ * @property int $user_id
  * @property string $quantity
  * @property string $value
  * @property string $total
@@ -31,6 +32,7 @@ class Transaction extends Entity
      */
     protected $_accessible = [
         'asset_id' => true,
+        'user_id' => true,
         'quantity' => true,
         'value' => true,
         'total' => true,

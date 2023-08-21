@@ -51,6 +51,10 @@ class DividendsTable extends Table
             'foreignKey' => 'asset_id',
             'joinType' => 'INNER',
         ]);
+        $this->belongsTo('Users', [
+            'foreignKey' => 'user_id',
+            'joinType' => 'INNER',
+        ]);
     }
 
     /**
@@ -66,9 +70,17 @@ class DividendsTable extends Table
             ->notEmptyString('asset_id');
 
         $validator
+            ->integer('user_id')
+            ->notEmptyString('user_id');
+
+        $validator
             ->date('date')
             ->requirePresence('date', 'create')
             ->notEmptyDate('date');
+
+        $validator
+            ->integer('share')
+            ->allowEmptyString('share');
 
         $validator
             ->decimal('value')
@@ -88,6 +100,7 @@ class DividendsTable extends Table
     public function buildRules(RulesChecker $rules): RulesChecker
     {
         $rules->add($rules->existsIn('asset_id', 'Assets'), ['errorField' => 'asset_id']);
+        $rules->add($rules->existsIn('user_id', 'Users'), ['errorField' => 'user_id']);
 
         return $rules;
     }

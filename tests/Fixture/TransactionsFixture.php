@@ -21,11 +21,12 @@ class TransactionsFixture extends TestFixture
             [
                 'id' => 1,
                 'asset_id' => 1,
+                'user_id' => 1,
                 'quantity' => 1.5,
                 'value' => 1.5,
                 'total' => 1.5,
-                'trade_date' => '2023-07-31',
-                'created' => '2023-07-31 21:29:17',
+                'trade_date' => '2023-08-21',
+                'created' => '2023-08-21 21:24:11',
             ],
         ];
         parent::init();

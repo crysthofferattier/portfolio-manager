@@ -51,6 +51,10 @@ class TransactionsTable extends Table
             'foreignKey' => 'asset_id',
             'joinType' => 'INNER',
         ]);
+        $this->belongsTo('Users', [
+            'foreignKey' => 'user_id',
+            'joinType' => 'INNER',
+        ]);
     }
 
     /**
@@ -64,6 +68,10 @@ class TransactionsTable extends Table
         $validator
             ->integer('asset_id')
             ->notEmptyString('asset_id');
+
+        $validator
+            ->integer('user_id')
+            ->notEmptyString('user_id');
 
         $validator
             ->decimal('quantity')
@@ -98,6 +106,7 @@ class TransactionsTable extends Table
     public function buildRules(RulesChecker $rules): RulesChecker
     {
         $rules->add($rules->existsIn('asset_id', 'Assets'), ['errorField' => 'asset_id']);
+        $rules->add($rules->existsIn('user_id', 'Users'), ['errorField' => 'user_id']);
 
         return $rules;
     }

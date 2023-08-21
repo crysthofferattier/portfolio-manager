@@ -66,10 +66,12 @@ class DividendsController extends AppController
     {
         $this->request->allowMethod(['post', 'put']);
         $dividend = $this->Dividends->newEntity($this->request->getData());
+        $this->Authorization->authorize($dividend);
 
         $dividend->date = $this->DateFormat
             ->convertDate($this->request->getData('date'));
 
+        $dividend->user_id = $this->Authentication->getIdentity()->id;
         if ($this->Dividends->save($dividend)) {
             $message = 'Saved';
         } else {
@@ -133,24 +135,30 @@ class DividendsController extends AppController
 
     public function getTotalDividendsPerType()
     {
+        $this->Authorization->skipAuthorization();
+
         $fiis = $this->Dividends->find()
             ->contain([
                 'Assets' => [
                     'AssetsType'
-                ]
+                ],
+                'Users'
             ])
             ->where([
-                'AssetsType.id' => '1'
+                'AssetsType.id' => '1',
+                'Users.id' => $this->Authentication->getIdentity()->id
             ]);
 
         $stocks = $this->Dividends->find()
             ->contain([
                 'Assets' => [
                     'AssetsType'
-                ]
+                ],
+                'Users'
             ])
             ->where([
-                'AssetsType.id' => '2'
+                'AssetsType.id' => '2',
+                'Users.id' => $this->Authentication->getIdentity()->id
             ]);
 
         $total = $this->Dividends->find()
@@ -163,12 +171,18 @@ class DividendsController extends AppController
 
     public function monthlyDividends()
     {
+        $this->Authorization->skipAuthorization();
+
         $query = $this->Dividends->find();
         $monthlyDividends = $query->select([
             'label' => 'MONTHNAME(date)',
             'y' => $query->func()->sum('value')
+        ])->contain([
+            'Users'
+        ])->where([
+            'Users.id' => $this->Authentication->getIdentity()->id
         ])->group('MONTHNAME(date)')
-        ->order('FIELD(label,"January","February","March", "June", "July","August","September","October","November","December")');
+            ->order('FIELD(label,"January","February","March", "June", "July","August","September","October","November","December")');
 
         $this->set(compact('monthlyDividends'));
     }
@@ -180,6 +194,7 @@ class DividendsController extends AppController
         // $user = $this->Authentication->getIdentity();
         // print_r($user->id);
         // exit();
+        $this->Authorization->skipAuthorization();
 
         $query = $this->Dividends->find();
         $monthlyDividendsPerType = $query->select([
@@ -189,7 +204,10 @@ class DividendsController extends AppController
         ])->contain([
             'Assets' => [
                 'AssetsType'
-            ]
+            ],
+            'Users'
+        ])->where([
+            'Users.id' => $this->Authentication->getIdentity()->id
         ])->group([
             'MONTHNAME(date)',
             'AssetsType.id'
